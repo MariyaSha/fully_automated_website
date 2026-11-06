@@ -4,6 +4,13 @@ A Streamlit news website that updates itself using **n8n**. RSS feeds provide ne
 
 **Project files:** `app.py` (website), `articles.json` (articles), `Dockerfile` (Docker setup).
 
+## Video Tutorial 🎥
+This code is written step by step in my **Python Simplified** tutorial: 
+<br>
+<a href="" target="_blank">**Build a Website That Updates Itself with AI, n8n & Python 🐍🤖**</a>
+
+<a href="" target="_blank"><img width="600" alt="Build a Website That Updates Itself with AI, n8n and Python" src="https://github.com/user-attachments/assets/d8b6e6ec-ff8b-48e1-8f61-5a407787e696"/></a>
+
 ## 1. Test locally
 
 From the project folder, with Docker running:
