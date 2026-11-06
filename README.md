@@ -1,4 +1,4 @@
-# 👹 Tech Goblin — Fully Automated News Website
+# 👹 Fully Automated News Website
 
 A Streamlit news website that updates itself using **n8n**. RSS feeds provide new stories, AI checks which ones are worth publishing, and the workflow writes new articles to `articles.json`.
 
