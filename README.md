@@ -6,9 +6,7 @@
 
 In my **Python Simplified** tutorial, I show how to set up the website, publish it on a VPS, and automate new articles with n8n. The project files are provided here, so you can follow along.
 
-<a href="" target="_blank">**Build a Website That Updates Itself with AI, n8n & Python 🐍🤖**</a>
-
-<a href="" target="_blank"><img width="600" alt="Build a Website That Updates Itself with AI, n8n and Python" src="https://github.com/user-attachments/assets/d8b6e6ec-ff8b-48e1-8f61-5a407787e696"/></a>
+<a href="https://youtu.be/3WcCoK3PqSk" target="_blank"><img width="600" alt="Build a Website That Updates Itself with AI, n8n and Python" src="https://github.com/user-attachments/assets/c53fbe84-d7b8-4953-98ec-ce32e7c38901"/></a>
 
 ## 🧪 1. Test Locally
 
