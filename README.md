@@ -1,6 +1,6 @@
 # 👹 Fully Automated News Website 👹
 
-**Tech Goblin** is a Streamlit news website that updates itself using n8n. RSS feeds provide new stories, AI decides which ones are worth publishing and writes new articles, and the workflow saves them to articles.json for the website to display.
+**Tech Goblin** is a Streamlit news website that updates itself using n8n. RSS feeds provide new stories, AI decides which ones are worth publishing and writes new articles, then the workflow saves them to articles.json for the website to display in real-time.
 
 ## 🎥 Video Tutorial
 
@@ -12,7 +12,7 @@ In my **Python Simplified** tutorial, I show how to set up the website, publish 
 
 ## 🧪 1. Test Locally
 
-From the project folder, with Docker running:
+From the project folder, with Docker Desktop running:
 
 ```bash
 docker build -t tech-goblin .
@@ -70,12 +70,13 @@ In n8n, use `/home/node/.n8n-files/articles.json` in both **Read/Write Files fro
 
 ## 🧠 4. n8n Resources
 
-The [`n8n_resources`](n8n_resources/) folder contains the **two AI prompts and JavaScript code** used in the workflow shown in the video tutorial:
+The [`n8n_resources`](n8n_resources/) folder contains the **AI prompts and JavaScript code** used in the n8n workflow shown in the video tutorial:
 
-- **Basic LLM Chain** (after Edit Fields): scores news stories from 1–10 and explains the score.
-- **Basic LLM Chain1** (after the If node): writes an article about a story approved for publishing.
-- **Script / Code in JavaScript** (after Extract from File): adds the new article to `articles.json`, skipping duplicate source links.
+- **Basic LLM Chain** (after Edit Fields): [rate_article_prompt.md](n8n_resources/rate_article_prompt.md) — scores news stories from 1–10 and explains the score.
+- **Basic LLM Chain1** (after the If node): [write_article_prompt.md](n8n_resources/write_article_prompt.md) — writes an article about a story approved for publishing.
+- **Code in JavaScript** (after Extract from File): [code_node.js](n8n_resources/code_node.js) — adds the new article to `articles.json`, skipping duplicate source links.
 
 ![n8n workflow overview](https://github.com/user-attachments/assets/ae3ef40d-ef52-4259-8f5a-a7a8a436e4ff)
+
 
 *This screenshot shows extra RSS feeds; the video tutorial uses three.*
